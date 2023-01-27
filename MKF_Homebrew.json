@@ -1,0 +1,203 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MKF_Homebrew",
+				"abbreviation": "MKFH",
+				"full": "MKF_Homebrew",
+				"url": "",
+				"authors": ["Makenfloi"],
+				"convertedBy": ["Makenfloi"]
+			}
+		],
+		"dateAdded": 1620583536,
+		"dateLastModified": 1655240342
+	},
+	"monster": [
+		{
+			"name": "Werewolf Alpha",
+			"size": ["M"],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "shapechanger",
+						"prefix": "human,"
+					}
+				]
+			},
+			"source": "MKF_Homebrew",
+			"alignment": ["C", "E"],
+			"ac": [
+				{
+					"ac": 14,
+					"from": ["Armor scraps"],
+					"condition": "in humanoid form"
+				},
+				{
+					"ac": 16,
+					"from": ["natural armor"],
+					"condition": "in wolf or hybrid form"
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 56",
+				"average": 119
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "( 40 ft. In Wolf Form)"
+				}
+			},
+			"str": 20,
+			"dex": 15,
+			"con": 18,
+			"int": 11,
+			"wis": 14,
+			"cha": 15,
+			"passive": 16,
+			"cr": "9",
+			"tokenUrl": "https://raw.githubusercontent.com/Makenfloi/RPG-AssetFiles/main/D%26D/Monsters/Werewolf%20Alpha/token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Makenfloi/RPG-AssetFiles/main/D%26D/Monsters/Werewolf%20Alpha/main.png"
+						}
+					}
+				]
+			},
+			"languages": ["Common (can't speak in wolf form)"],
+			"languageTags": ["C", "CS"],
+			"save": {
+				"con": "+8",
+				"wis": "+6",
+				"str": "+9"
+			},
+			"skill": {
+				"athletics": "+9",
+				"perception": "+6"
+			},
+			"immune": [
+				{
+					"immune": ["bludgeoning", "piercing", "slashing"],
+					"note": "from nonmagical weapons that aren't silvered"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						" If the werewolf alpha fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The werewolf alpha has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Leader",
+					"entries": [
+						"The werewolf's allies have advantage on melee attack rolls against any hostile creature within 5 feet of the werewolf."
+					]
+				},
+				{
+					"name": "Shapechanger (Werewolf)",
+					"entries": [
+						"The werewolf alpha can use its action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Legendary Resistances",
+				"Shapechanger"
+			],
+			"action": [
+				{
+					"name": "Multiattack (Hybrid Form Only)",
+					"entries": [
+						"The werewolf makes three attacks: one with its bite and two with its claws"
+					]
+				},
+				{
+					"name": "Bite (Wolf or Hybrid form Only)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}19 ({@damage 2d8 + 10}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 14} Constitution saving throw or be cursed with werewolf lycanthropy."
+					]
+				},
+				{
+					"name": "Claws (Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}21 ({@damage 2d10 + 10}) slashing damage."
+					]
+				}
+			],
+			"damageTags": ["P", "S"],
+			"miscTags": ["MW", "AOE"],
+			"actionTags": ["Multiattack"],
+			"legendaryHeader": [
+				"The werewolf can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The werewolf regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Leap",
+					"entries": [
+						"The werewolf moves up to its speed without provoking opportunity attacks"
+					]
+				},
+				{
+					"name": "Frenzy (Costs 2 Actions)",
+					"entries": [
+						"The werewolf can make one claw attack against each creature within 5 feet of it."
+					]
+				},
+				{
+					"name": "Bark Orders",
+					"entries": [
+						"The werewolf chooses a friendly creature who can see or hear it. That creature can use its reaction to move up to its speed without provoking opportunity attacks."
+					]
+				}
+			],
+			"damageTagsLegendary": ["B", "L"]
+		}
+	],
+	"item": [
+		{
+			"name": "Cestus",
+			"weapon": true,
+			"weaponCategory": "simple",
+			"rarity": "uncommon",
+			"value": 200,
+			"weight": 1,
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"Donning or doffing this glove-like weapon requires an action and you may hold another object in the same hand as the cestus. Unarmed strikes deal 1d4 bludgeoning damage whilst the cestus is worn."
+					]
+				}
+			],
+			"source": "FFItemsGalore"
+		},
+		{
+			"name": "Darkvision Eyeshadow",
+			"wondrous": true,
+			"rarity": "uncommon",
+			"source": "MCos",
+			"entries": [
+				"A small container with {@dice 1d6+2} uses of a deep purple powder.",
+				"One use can be applied around the eyes during a short or long rest and remains applied for 24 hours, unless removed.",
+				"While applied the wearer has darkvision up to 30 ft."
+			]
+		}
+	]
+}

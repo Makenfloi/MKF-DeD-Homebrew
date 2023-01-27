@@ -166,38 +166,5 @@
 			],
 			"damageTagsLegendary": ["B", "L"]
 		}
-	],
-	"item": [
-		{
-			"name": "Cestus",
-			"weapon": true,
-			"weaponCategory": "simple",
-			"rarity": "uncommon",
-			"value": 200,
-			"weight": 1,
-			"dmg1": "1d4",
-			"dmgType": "B",
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Special",
-					"entries": [
-						"Donning or doffing this glove-like weapon requires an action and you may hold another object in the same hand as the cestus. Unarmed strikes deal 1d4 bludgeoning damage whilst the cestus is worn."
-					]
-				}
-			],
-			"source": "FFItemsGalore"
-		},
-		{
-			"name": "Darkvision Eyeshadow",
-			"wondrous": true,
-			"rarity": "uncommon",
-			"source": "MCos",
-			"entries": [
-				"A small container with {@dice 1d6+2} uses of a deep purple powder.",
-				"One use can be applied around the eyes during a short or long rest and remains applied for 24 hours, unless removed.",
-				"While applied the wearer has darkvision up to 30 ft."
-			]
-		}
 	]
 }
